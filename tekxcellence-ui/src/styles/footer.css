@@ -1,0 +1,54 @@
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer {
+    display: flex;
+    width: 75%;
+  
+    justify-content: space-between;
+  }
+  
+  .rigthContent {
+    display: flex;
+    position: relative;
+    width: 65%;
+    justify-content: space-between;
+  }
+  
+  .rigthContent a {
+    color: rgba(0, 0, 0, 0.315);
+  }
+  
+  .rigthContent > img {
+    width: 100%;
+  
+  
+  }
+  @media all and (max-width: 1030px) {
+    footer {
+        height: 50px;
+        background-color: #fba336;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: center;
+        
+    }
+ 
+    .footer {
+     margin-top: 1rem;
+     width: 90%;
+    }
+ 
+    .leftContent p {
+     font-size: .7rem;
+     color: white;
+    }
+ 
+    .rigthContent p {
+     font-size: .7rem;
+    }
+ }

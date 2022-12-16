@@ -1,0 +1,101 @@
+.postWrapperLanding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32rem;
+    height: 13.5rem;
+    border-radius: 10px;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.425);
+    overflow: hidden;
+    transition: all ease 0.3s;
+  }
+  
+  .postWrapperLanding:hover {
+    transform: scale(1.01);
+  }
+  
+  .rigthInfoLanding {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    width: 43%;
+  }
+  
+  .rigthInfoLanding h2 {
+    /* color: rgb(3, 3, 82); */
+    color: #f89721;
+    width: 100%;
+    height: 60%;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .rigthInfoLanding button {
+    background-color:  #0794d2; 
+    /* background-color: #061b31; */
+    /* color: white; */
+    color: #061b31;
+    width: 7rem;
+  }
+  
+  @media (max-width: 600px) {
+    .postWrapperLanding {
+        height: 30%;
+        width: 250px;
+        flex-flow: column nowrap;        
+        justify-content: space-between;
+        background-color: white;
+        margin-bottom: 1.0rem;
+        align-items: center;
+    }
+
+    .rigthInfoLanding {
+        flex-flow: column wrap; 
+        
+        width: 90%;
+        height: 10rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .rigthInfoLanding h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .rigthInfoLanding button {
+        background-color: #92d362;
+        height: 2.3rem;
+    }
+}
+
+@media all and (min-width:601px) and (max-width: 1030px) {
+    .postWrapperLanding{
+        height: 30%;
+        width: 250px;
+        flex-flow: column nowrap;        
+        justify-content: space-between;
+        background-color: white;
+        margin-bottom: 1.0rem;
+        margin-left: 3.5rem;
+    }
+
+    .rigthInfoLanding {
+        flex-flow: column wrap; 
+        
+        width: 90%;
+        height: 10rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .rigthInfoLanding h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .rigthInfoLanding button {
+        background-color: #92d362;
+        height: 2.3rem;
+    }
+}

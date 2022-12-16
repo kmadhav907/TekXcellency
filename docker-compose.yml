@@ -1,0 +1,33 @@
+version: "3.0"
+services:
+  frontend-service:
+    container_name: ngixreactapp
+    build:
+      context: tekxcellence-ui
+      dockerfile: Dockerfile
+    ports:
+    - 80:80
+    depends_on:
+      - backend-service
+  backend-service:
+    build: 
+      context: tekxcellence-svc
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8083"
+    environment:
+      - spring.datasource.url=jdbc:mysql://mysql_service:3306/employee?useSSL=false
+      - spring.datasource.username=madhav
+      - spring.datasource.password=madhav
+    depends_on:
+      - mysql_service
+  mysql_service:
+    container_name: mysql-db-container
+    image: mysql:5.7
+    environment: 
+      - MYSQL_ROOT_PASSWORD=madhav
+      - MYSQL_DATABASE=employee
+      - MYSQL_USER=madhav
+      - MYSQL_PASSWORD=madhav
+    ports:
+          - "9906:3306"

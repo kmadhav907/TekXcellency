@@ -1,0 +1,33 @@
+
+ul.pagination-feedback {
+  /* display: inline-block; */
+  padding-left: 35rem;
+  margin: 3px;
+ 
+}
+
+ul.pagination-feedback li {
+  /* display: inline;  */
+  float: right;
+}
+
+ul.pagination-feedback li a {
+  color: black;
+  /* float: left; */
+  float: right;
+  text-align: right;
+  padding: 8px 25px; 
+  text-decoration: none;
+  font-weight: bolder;
+  transition: background-color .3s;
+  /* border: 1px solid rgb(23, 11, 148); */
+}
+
+
+
+ul.pagination-feedback li a:hover:not(.active) {
+  background-color: rgb(7, 163, 166);}
+
+div.center-feedback {
+  text-align: center;
+}

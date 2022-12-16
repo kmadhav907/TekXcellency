@@ -1,0 +1,298 @@
+.choicePageAdminContainer {
+    position: absolute;
+    top: 50px;
+    width: calc(100vw - 190px);
+    padding: 5px;
+    left: 185px;
+}
+.choicePageAdminContainer > .title {
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+    font-weight: 500;
+    margin: 15px 0;
+}
+.feedbackTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  
+  }
+  
+  .feedbackTable td, .feedbackTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .feedbackTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .feedbackTable tr:hover {background-color: #ddd;}
+  
+  .feedbackTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #e0a00b;
+    color: white;
+  }
+
+.MiscSubmitWinnerContainer {
+    position: absolute;
+    top: 50px;
+    padding: 5px;
+    left: 185px;
+}
+
+.MiscSubmitWinnerContainer > .ActionLists{
+    display: grid;
+    width: calc( 100vw - 200px);
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+}
+
+.MiscSubmitWinnerContainer > .ActionLists> .ActionContent{
+    height: 110px;
+    background: #fff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 800 !important;
+    padding: 10px;
+    width: auto;
+}
+
+.MiscWinnerHeader > h3{
+    font-weight: 800 !important;
+    text-align: center;
+    font-size:x-large;
+}
+
+.MiscWinnerHeader{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    background-color: #F09819;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.MiscEmployeeInTable{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.MiscEmployeeInTable > .MiscEmployeeInTableName{
+    width: 50%;
+    margin-right: -60px;
+    margin-top: 1px;
+}
+
+.MiscEmployeeInTable > .MiscEmployeeInTablePoints{
+    width: 40%;
+    display: flex;
+}
+
+.MiscEmployeeInTablePoints > :nth-child(1){
+    width: 70%;
+}
+
+.MiscEmployeeInTablePoints > :nth-child(2){
+    width: 30%;
+    padding: 0;
+    margin-top: -11px;
+}
+
+.MiscCheckbox{
+    transform: scale(0.9);
+}
+
+.MiscCheckNote{
+    font-size: 11px;
+    display: block;
+    color: green;
+    /* width: 10%; */
+    visibility: hidden;
+}
+
+.ActionContent > .ActionImage > img{
+    max-width: 40px;
+}
+
+.ActionContent > .ActionDetails{
+    font-size: 14px;
+    line-height:150%;
+}
+
+.ActionLists > button:disabled{
+    background-color: lightgray !important;
+}
+
+.AdminAwardsContainer{
+    width: calc(100vw - 180px);
+    height: calc(100vh - 50px);
+    margin-left: 180px;
+    margin-top: 50px;
+    display: flex;
+    position: absolute;
+}
+
+.AdminAwardsContainer > .AdminAwardsSection{
+    width: 60%;
+    padding-top: 10px;
+    flex-grow: 1;
+    overflow: auto;
+    min-height: 0;
+}
+
+.AdminAwardsContainer > .AdminAddAwardSection{
+    width: 40%;
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.AdminAwardsSection > .AdminAwardsSectionHeader{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 40%;
+    padding-right: 2%;
+    height: 10%;
+    border-bottom: 0.5px solid lightgray;
+    align-items: center;
+    padding-bottom: 1%;
+}
+
+.AwardDesc{
+    height: 10ch;
+    font-size: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.AwardEditButtonContainer{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.AwardEditButtonContainer > button{
+    width: 80%;
+    height: 100%;
+    margin-right: 4px;
+}
+
+.AwardEditButton{
+    text-align: center !important;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    /* box-shadow: 0px 0px 14px -7px #f09819; */
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+.AwardEditButton:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.AwardDeleteButton{
+    background-image: linear-gradient(45deg, #f58973 0%, #df0e0e  51%, #fa3a14  100%);
+}
+
+.NewAwardHeader{
+    height: 6.51%;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.NewAwardFormContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.NewAwardSubmitContainer{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .NewAwardButton{
+      text-align: center !important;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      border-radius: 10px;
+      display: block;
+      border: 0px;
+      font-weight: 700;
+      box-shadow: 0px 0px 14px -7px #f09819;
+      background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+
+}
+.NewAwardButton:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.NewAwardButton:disabled{
+    background-image: linear-gradient(45deg, #aba9a9 0%, #b9b7b5  51%, #d6d4d3  100%);
+    box-shadow: 0px 0px 14px -7px #d3d2d2;
+}
+
+  .headerFeedback{
+    text-align: center;
+    color:#0794d2;
+    font-size:2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+@media  screen and (max-width: 700px) {
+    .choicePageAdminContainer {
+        width: 100vw;left: 0;
+    }
+}
+

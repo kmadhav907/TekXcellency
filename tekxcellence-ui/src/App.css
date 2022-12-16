@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw; 
+  position: relative;
+  overflow: auto;
+  overflow-x: hidden;
+
+}
+::-webkit-scrollbar {
+  width: 6px;
+  z-index:1000000;
+}
+::-webkit-scrollbar-track {
+  background-color:#022f;
+
+}
+#root {
+  width: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #1292d1;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa';
+}
+.aws-btn {
+  --slider-height-percentage: 60%;
+  --slider-transition-duration: 770ms;
+  --organic-arrow-thickness: 4px;
+  --organic-arrow-border-radius: 0px;
+  --organic-arrow-height: 40px;
+  --organic-arrow-color: #ffffff;
+  --control-button-width: 10%;
+  --control-button-height: 25%;
+  --control-button-background: transparent;
+  --control-bullet-color: #ffffff;
+  --control-bullet-active-color: #ffffff;
+  --loader-bar-color: #851515;
+  --loader-bar-height: 6px;
+  --content-background-color:#fff;
+}
+@media screen and (max-width:700px) {
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: unset;
+    border-radius: unset;
+    background-color: unset;
+  }
+  ::-webkit-scrollbar {
+    width: unset;
+    z-index:1000000;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: unset;
+  
+  }
+}

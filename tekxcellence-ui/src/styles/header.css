@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wraper-header {
+    width: 85%;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo-header {
+    display: flex;
+  }
+  
+  .logo-header h1 {
+    color: #fc9424;
+    font-size: 2rem;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 45%;
+    color: white; 
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  
+  li {
+    font-size: .8rem;
+  }
+  
+  button {
+    border: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;
+    /* color: #92d362; */
+    color: #061b31;
+    /* background-color: #0794d2; */
+    font-size: .8rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .button1 {
+    border: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;
+    /* color: #92d362; */
+    color: #061b31;
+    background-color: #0794d2;
+    font-size: .8rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #button{
+    background-color: #05305f; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .list-header a {
+    text-decoration: none;
+  }
+  link {
+    text-decoration: none;
+    color: #0794d2;
+    transition: all 0.6s;
+    font-size: medium;
+    
+  }
+  
+  link:hover {
+    color: rgb(3, 3, 82);
+    border-bottom: 1px solid rgb(3, 3, 82);
+  }
+  
+  .modal{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 14rem;
+    text-align: center;
+  }
+  
+  .modal input {
+    height: 2rem;
+    width: 90%;
+  }
+  
+  .modalBtn {
+    width: 80%;
+    /* background-color: #92d362; */
+    background-color: #061b31;
+    color: white;
+    cursor: pointer;
+    transition: all ease .8s;
+  }
+  
+  .modalBtn:hover {
+    /* background-color: #639143; */
+    background-color: #061b31;
+    
+  }
+
+  /* .btn-header {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+   */
+  
+@media screen and (max-width: 700px) { 
+
+  header {
+      background-color: #f89721;
+  }
+  .wraper-header ul{
+    display: none;
+    
+  }
+  .wraper-header {
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .wraper-header h1 {
+    color: white;
+    font-size: 2rem;
+    
+  }
+
+  nav {
+      width: 3rem;
+  }
+
+  button {
+      width: 5rem;
+      height: 1.5rem;
+  }
+ }
+
+ @media screen and (max-width:900px) { 
+
+  header {
+      background-color: #f89721;
+  }
+  .wraper-header ul{
+    display: none;
+    
+  }
+  .wraper-header {
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .wraper-header h1 {
+    color: white;
+    font-size: 2rem;
+    
+  }
+
+  nav {
+      width: 3rem;
+  }
+
+  button {
+      width: 5rem;
+      height: 1.5rem;
+  }
+
+   .list{
+    display: font;
+    justify-content: space-between;
+  } 
+
+/* .list a:not(:first-child) {display: none;}
+.list a.icon {
+  float: right;
+  display: block;
+} */
+ }
+ @media screen and (max-width: 540px) {
+    header {
+      background-color: #f89721;
+      width: 100%;
+  }
+  .wraper-header ul{
+    display: none;
+    
+  }
+  .wraper-header {
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .wraper-header h1 {
+    color: white;
+    font-size: 2rem;
+    
+  }
+
+  nav {
+      width: 3rem;
+  }
+
+  button {
+      width: 5rem;
+      height: 1.5rem;
+  }
+  }
+ 
+  
+  
+  
+  

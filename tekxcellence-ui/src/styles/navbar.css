@@ -1,0 +1,182 @@
+.nav {
+    height: 50px;
+    width: 100%;
+    /* background: #000; */
+    background-image: linear-gradient(to right top, #061b31, #103656, #17537e, #1772a7, #0794d2);
+    display: flex;
+align-items: center;
+justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    border-bottom: 0.25px solid #AAAAAA;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding:  2.5px 2.5px 0px 2.5px;
+    cursor: pointer;
+  }
+  .nav > .nav-header > .nav-title > img {
+    height: 45px;
+  }
+
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 8px 10px 8px 10px;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    background-color: #f8951e;
+    margin: 5px;
+    border-radius: 4px;
+
+  }
+  
+  .nav > .nav-links > div > a {
+    display: inline-block;
+    padding: 8px 10px 8px 10px;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    background-color: #f8951e;
+    margin: 5px;
+    border-radius: 4px;
+
+  }
+  
+  .nav > .nav-links {
+    display:  none;
+  }
+  .nav > #nav-check {
+    display: none;
+  }
+  .sidebarNav {
+    width: 180px;
+    height: 100vh;
+    /* float: right; */
+     background-color:  #061b31; 
+    /* background: rgb(6,27,49);
+background: linear-gradient(290deg, rgba(6,27,49,1) 0%, rgba(7,148,210,1) 26%, rgba(248,151,33,1) 100%); */
+/* background: rgb(6,27,49);
+background: linear-gradient(290deg, rgba(6,27,49,1) 0%, rgba(7,148,210,1) 26%, rgba(249,143,15,1) 100%); */
+/* background-image: linear-gradient(to right top, #0794d2, #1772a7, #17537e, #103656, #061b31); */
+    position: fixed;
+    /* top: 50px;
+    left: 730px; */
+    overflow: hidden;
+    left: 0;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+  }
+  .sidebarItem{
+    margin: 5px 0;
+    width: 95%;
+    font-size: 16px;
+    padding: 5px;
+    line-height: 18px;
+    font-weight: normal;
+    font-family: "Rubik";
+    color:#f8951e;
+    /* color: #000000; */
+    display: flex;
+    align-self: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .sidebarItem:first-child {
+    margin-top: 35px;
+  }
+ 
+  .sidebarItem:hover {
+    background-color: #f8951e;
+    transition: all 0.2s ease-in;
+    color:rgb(0, 0, 0);
+  }
+  .sidebarNav a {
+    text-decoration: none;
+  }
+  .sidebarNav a:hover {
+    background-color: #f8951e;
+    transition: all 0.2s ease-in;
+    color:rgb(0, 0, 0);
+  }
+
+  @media (max-width:700px) {
+    .nav > .nav-links {
+      display: inline;
+      float: right;
+      font-size: 14px;
+    }
+    
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      height: 100%;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #1191d0;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: rgb(0, 0, 0);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      background-color: unset;
+      margin: 0;
+      margin-top: 10px;
+      color: white;
+      padding: 10px;
+    }
+    .nav > .nav-links > a:hover{
+        background-color: #1191d0;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+     .sidebarNav {
+      display: none
+    } 
+  }

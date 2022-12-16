@@ -1,0 +1,179 @@
+.profileContainer{
+    width: calc(100vw - 180px);
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+}
+
+.profileContainer > .left1{
+    width: 40%;
+    height: 100%;
+    background-color: rgba(218, 223, 225,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.profileContainer > .right1{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profileContainer .rightHeader{
+    border-bottom: 1px solid rgba(218, 223, 225,1);;
+    font-size: 18px;
+    align-items: center;
+    /* text-align: center; */
+    padding: 17px 0px 17px 10px;
+}
+
+.rightForm{
+    /* margin: auto; */
+    margin-top: 15px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.rightForm > form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+
+ 
+}
+
+.rightForm > div{
+    width: 100%;
+
+}
+
+.UpdateProfileButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200%;
+    margin-top: 20px;
+}
+.updateBtn{
+
+    
+    /* CSS */
+
+      /* padding: 15px 30px; */
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      border-radius: 10px;
+      display: block;
+      border: 0px;
+      font-weight: 700;
+      box-shadow: 0px 0px 14px -7px #f09819;
+      background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+
+}
+    .updateBtn:hover {
+      background-position: right center;
+      /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .updateBtn:disabled{
+        background-image: linear-gradient(45deg, #aba9a9 0%, #b9b7b5  51%, #d6d4d3  100%);
+        box-shadow: 0px 0px 14px -7px #d3d2d2;
+    }
+    
+    .updateBtn:active {
+      transform: scale(0.95);
+    
+}
+.profileContainer .left1 .profilePic {
+
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    position: relative;
+ 
+}
+.profileContainer .profilePic .MuiCardMedia-root {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+} 
+.profileContainer >  .left1 .rewardPointsContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top:  20px;
+    justify-content: center;
+    flex-direction: column;
+}
+.profileContainer > .left1 .rewardPointsContainer > div {
+    width: calc(100% - 20px);
+    font-size: 22px;
+    line-height: 24px;
+    padding: 5px 10px;
+    background-color: #F09819;
+    margin: 5px 0;
+}
+
+.rewardPoints{
+    float: right;
+    /* border: 1px solid red; */
+    border-radius: 200px;
+}
+.awardsWon{
+    float: right;
+}
+
+.professionalSkillsDiv{
+    width: 100%;
+}
+
+.empInfoLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0px 20px 0px;
+    gap: 5px;
+    text-decoration: solid;
+}
+
+
+@media (max-width:900px){
+    .profileContainer > .left1 {
+        display: none;
+    }
+    .profileContainer > .right1 {
+        width: 100%;
+    }
+}
+
+@media (max-width:700px) { 
+    .profileContainer {
+        left: 0;
+        width: 100vw;
+    }
+    .profileContainer > .left1 {
+        display: none;
+    }
+    .profileContainer > .right1 {
+        width: 100vw;
+    }
+}

@@ -1,0 +1,70 @@
+.PostBlogImportance {
+    display: flex;
+    flex-flow: column wrap;
+    width: 20rem;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.466);
+    margin: 0 1.5rem;
+    transition: all 0.3s;
+    
+}
+
+.PostBlogImportance:hover {
+    transform: scale(1.05)
+}
+
+.middleBlogImportance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+}
+
+.middleBlogImportance h2 {
+  color: rgb(3, 3, 82);
+  line-height: 2rem;
+ 
+  width: 85%;
+  
+}
+
+
+
+@media all and (max-width: 600px) {
+    .PostBlogImportance {
+        width: 60%;
+        align-items: center;
+        align-content: center;
+        height: 26rem;
+        background-color: white;
+        margin-bottom: 2rem;
+    }
+
+    .middleBlogImportance h2 {
+        
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 601px) and (max-width:1030px){
+    .PostBlogImportance {
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        height: 26rem;
+        background-color: white;
+        margin-bottom: 2rem;
+    }
+
+    .middleBlogImportance h2 {
+        
+        width: 90%;
+        text-align: center;
+    }
+
+    .topBlogImportance {
+        margin-top: 2rem;
+    }
+}
